@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, html {
+	margin: 0;
+	font-family:'Apple SD Gothic Neo','Noto Sans CJK KR', 'Malgun Gothic', 'dotum', 'gulim',sans-serif;
+	background-color: white;
+	width:100%;
+	transition: 0.25s;
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	border:0 none;
+}
+
+a {
+	outline:none;
+	color:#333;
+	text-decoration:none;
+	cursor: pointer;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style:none
+}
+
+h2 {font-size:24px; font-weight:bold;}
+
+
+.clear {
+	clear: both;
+}
+
+
+
+.hero {
+	background-color: #1F252C;
+	width: 100%;
+	color: white;
+	padding: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero .message img {
+	width: 180px;
+	margin-bottom: 50px;
+	margin-left: -10px;
+}
+.hero .message {
+	font-family: 'IBM Plex Mono', monospace;
+	z-index: 999;
+	margin: 80px 0 50px 0;
+}
+.hero .message a {
+	color: white;
+	text-decoration: underline;
+}
+.hero .message h1 {
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 2.6rem;
+	padding-bottom: 20px;
+}
+.hero .message span {
+	font-weight: 300;
+	letter-spacing: -0.5px;
+	word-break: keep-all;
+}
+.hero .dream {
+	position: absolute;
+	float: right;
+	top: -300px;
+	right: -500px;
+}
+
+.hero .dream img {
+	max-width: 70%;
+	height: auto;
+	text-align: right;
+}
+
+
+@media only screen and (min-width: 1024px) {
+	.hero {
+		padding: 0 100px;
+		height: 90vh;
+	}
+	.hero .dream {
+		top: -300px;
+		right: -400px;
+	}
+	.hero .dream img {
+	}
+	.hero .message {
+		bottom: 150px;
+		padding-right: 100px;
+		max-width: 1024px;
+		position: absolute;
+	}
+}
+
+.history, .news {
+	padding: 50px 30px;
+	margin: 0 auto;
+	color: #1F252C;
+}
+
+.history img {
+	/*width: 300px;
+	height: 300px;*/
+	width: 80%;
+}
+
+.history .profile {
+	text-align: right;
+}
+
+.news {
+	background-color: #eeeeee;
+}
+
+.listGroup {
+	max-width: 1366px;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+.listGroup h2 {
+	font-weight: 700;
+	font-size: 2rem;
+	padding-bottom: 50px;
+	font-family: 'IBM Plex Mono', monospace;
+}
+.listGroup h3 {
+	font-weight: 700;
+	font-size: 16px;
+	font-family: 'IBM Plex Mono', monospace;
+	color: #333;
+}
+.listGroup ul {
+	width: 100%;
+	overflow: auto;
+	margin-bottom: 50px;
+}
+.listGroup ul:last-child {
+	margin: 0;
+}
+.listGroup ul li {
+	font-size: 14px;
+	padding: 6px 0;
+	color: #1F252C;
+}
+.listGroup ul li:first-child {
+	padding-top: 0;
+}
+.listGroup ul li a {
+	text-decoration: underline;
+}
+.listGroup ul li a:hover {
+	font-weight: 700;
+}
+.listTitle {
+	float: left;
+	vertical-align: top;
+	width: 20%;
+}
+.listWrap {
+	float: left;
+	width: 80%;
+}
+.separator {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #1F252C;
+	margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.history, .news {
+		padding: 50px 100px;
+	}
+	.listGroup ul li {
+		font-size: 14px;
+		padding: 5px 0;
+	}
+	.listGroup ul {
+		width: 50%;
+		float: left;
+		vertical-align: top;
+	}
+	.listGroup .ly {
+		padding-right: 50px;
+	}
+	.listGroup .ry {
+		padding-left: 50px;
+	}
+	.listTitle {
+		width: 30%;
+	}
+	.listWrap {
+		width: 70%;
+	}
+	.history img {
+		width: 70%;
+	}
+}
+
+
+.footer {
+	background-color: #1F252C;
+	padding: 30px;
+	color: white;
+	font-size: 11px;
+}
+.footer .logo img {
+	width: 180px;
+	margin-left: -10px;
+}
+.footer .contactInfo {
+	opacity: 0.5;
+	margin-top: 10px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.footer .contactInfo ul li {
+	padding: 2px 0;
+}
+@media only screen and (min-width: 1024px) {
+	.footer {
+		padding: 50px 100px;
+	}
+}
