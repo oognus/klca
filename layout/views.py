@@ -6,7 +6,6 @@ from .models import Home
 def index(request):
 
     homes = Home.objects.all().first()
-    print(homes)
 	
     context = {
         'title': homes.title
